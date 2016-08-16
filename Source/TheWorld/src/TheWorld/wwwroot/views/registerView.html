@@ -1,0 +1,36 @@
+﻿<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3 id="registrationHeader">Registration</h3>
+        <wait-cursor display-when="vm.isBusy"></wait-cursor>
+        <div id="errorMessage" class="alert alert-danger" ng-show="vm.errorMessage">{{vm.errorMessage}}</div>
+
+        <form novalidate name="newUserForm" ng-submit="vm.addUser()">
+            <div class="form-group">
+                <label>User Name</label>
+                <input class="form-control" id="userName" name="userName"
+                       ng-model="vm.newUser.userName" required ng-pattern="/^[a-zA-Z0-9]*$/" />
+                <span class="text-danger" ng-show="newUserForm.userName.$error.required">Required</span>
+                <span class="text-danger" ng-show="newUserForm.userName.$error.pattern">Minimum of 8 characters, no spaces or special characters.</span>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" id="passWord" name="passWord" type="password" ng-pattern="/(?=.*\d)(?=.*[a-z])(?=.*[$@$!%*#?&])(?=.*[A-Z]).{8,}/"
+                       ng-model="vm.newUser.passWord" required />
+                <span class="text-danger" ng-show="newUserForm.passWord.$error.required">Required</span>
+                <span class="text-danger" ng-show="newUserForm.passWord.$error.pattern">Minimum of 8 characters, must have one lower, capitol, and number.</span>
+            </div>
+            <div>
+                <label>Email</label>
+                <input class="form-control" id="eMail" name="eMail" type="email"
+                       ng-model="vm.newUser.eMail" required ng-minlength="5" />
+                <span class="text-danger" ng-show="newUserForm.eMail.$invalid">Must be a valid email address.</span>
+            </div>
+            <div>
+                <input type="submit" id="registrationSubmitButton" value="Register" class="btn btn-success" ng-disabled="newUserForm.$invalid" />
+            </div>
+        </form>
+        <div id="registrationSuccessMessage">
+              <a class="alert alert-success" ng-show="vm.successMessage" href="/Auth/Login">{{vm.successMessage}}</a>
+        </div>
+    </div>
+</div>
