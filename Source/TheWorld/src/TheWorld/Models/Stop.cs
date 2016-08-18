@@ -1,6 +1,7 @@
-﻿namespace TheWorld.Models
+﻿    using System;
+
+namespace TheWorld.Models
 {
-    using System;
 
     public class Stop
     {

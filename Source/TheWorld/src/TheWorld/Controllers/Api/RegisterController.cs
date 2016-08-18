@@ -1,14 +1,15 @@
-﻿namespace TheWorld.Controllers.Api
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Net;
+using System.Threading.Tasks;
+using TheWorld.Models;
+using TheWorld.ViewModels;
+
+namespace TheWorld.Controllers.Api
 {
-    using AutoMapper;
-    using Microsoft.AspNetCore.Identity;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
-    using System;
-    using System.Net;
-    using System.Threading.Tasks;
-    using TheWorld.Models;
-    using TheWorld.ViewModels;
 
     [Route("api/register")]
     public class RegisterController : Controller

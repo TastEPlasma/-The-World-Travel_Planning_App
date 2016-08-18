@@ -1,6 +1,7 @@
-﻿namespace TheWorld.Models
+﻿using System.Collections.Generic;
+
+namespace TheWorld.Models
 {
-    using System.Collections.Generic;
 
     public interface IWorldRepository
     {

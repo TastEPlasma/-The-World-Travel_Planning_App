@@ -1,0 +1,109 @@
+/* site.css */
+
+#sidebar {
+    background: #2a2c36;
+    color: #eee;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s;
+}
+
+    #sidebar.hide-sidebar {
+        left: -250px;
+        -moz-transition: left ease .25s;
+        -o-transition: left ease .25s;
+        -webkit-transition: left ease .25s;
+        transition: left ease .25s;
+    }
+
+#sidebarUsername {
+    font-size: x-large;
+    font-weight: 300;
+    margin-left: 10px;
+    color: white;
+}
+
+.nav {
+    font-size: 24px;
+}
+    .nav li:active {
+        font-weight: bold;
+    }
+
+#wrapper {
+    margin: 0 0 0 250px;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
+}
+
+    #wrapper.hide-sidebar {
+        margin-left: 0;
+        -moz-transition: margin-left ease .25s;
+        -o-transition: margin-left ease .25s;
+        -webkit-transition: margin-left ease .25s;
+        transition: margin-left ease .25s;
+    }
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+#printScreenButton {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#headerText {
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+#sidebarToggle {
+    margin-top: 5px;
+}
+
+#courseLink {
+    text-decoration: underline;
+}
+
+#aboutHeader {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#registrationHeader {
+    text-align: center;
+}
+
+#contactHeader {
+    text-align: center;
+}
+
+#loginHeader {
+    text-align: center;
+}
+
+#newUser_Login {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#registrationSubmitButton {
+    margin-top: 20px;
+}
+
+#registrationSuccessMessage {
+    margin-top: 50px;
+    text-align: center;
+}

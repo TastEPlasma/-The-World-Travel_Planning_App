@@ -1,22 +1,23 @@
-﻿namespace TheWorld
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using TheWorld.Models;
+using Newtonsoft.Json.Serialization;
+using TheWorld.Services;
+using System.IO;
+using System.Net;
+using System.Threading.Tasks;
+using TheWorld.ViewModels;
+
+namespace TheWorld
 {
-    using AutoMapper;
-    using Microsoft.AspNetCore.Authentication.Cookies;
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore.Infrastructure;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Logging;
-    using Models;
-    using Newtonsoft.Json.Serialization;
-    using Services;
-    using System.IO;
-    using System.Net;
-    using System.Threading.Tasks;
-    using ViewModels;
 
     public class Startup
     {
@@ -97,8 +98,8 @@
             //    app.UseExceptionHandler("/App/Error");
             //}
 
-            loggerFactory.AddDebug(LogLevel.Error);
-
+            loggerFactory.AddDebug(LogLevel.Information);
+            loggerFactory.AddConsole(LogLevel.Information);
 
             app.UseStaticFiles();
 

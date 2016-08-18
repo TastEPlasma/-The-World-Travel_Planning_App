@@ -1,10 +1,12 @@
-﻿namespace TheWorld.Controllers
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using TheWorld.Models;
+using TheWorld.ViewModels;
+
+namespace TheWorld.Controllers
 {
-    using Microsoft.AspNetCore.Identity;
-    using Microsoft.AspNetCore.Mvc;
-    using System.Threading.Tasks;
-    using TheWorld.Models;
-    using TheWorld.ViewModels;
+    
 
     public class AuthController : Controller
     {

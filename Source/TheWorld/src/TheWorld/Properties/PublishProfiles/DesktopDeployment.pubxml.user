@@ -5,30 +5,38 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Users\EWebs\Desktop\Deployment</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
-    <File Include=".bowerrc">
-      <publishTime>08/16/2016 15:40:21</publishTime>
-    </File>
-    <File Include="app.config">
-      <publishTime>08/16/2016 15:40:19</publishTime>
-    </File>
-    <File Include="bower.json">
-      <publishTime>08/16/2016 15:40:20</publishTime>
-    </File>
     <File Include="config.json">
       <publishTime>07/18/2016 18:01:02</publishTime>
     </File>
-    <File Include="project.json">
-      <publishTime>08/16/2016 16:04:41</publishTime>
+    <File Include="Views/App/About.cshtml">
+      <publishTime>08/16/2016 15:40:09</publishTime>
     </File>
-    <File Include="project.lock.json">
-      <publishTime>08/16/2016 16:00:18</publishTime>
+    <File Include="Views/App/Contact.cshtml">
+      <publishTime>08/16/2016 15:40:10</publishTime>
     </File>
-    <File Include="web.config">
-      <publishTime>08/16/2016 15:40:28</publishTime>
+    <File Include="Views/App/Index.cshtml">
+      <publishTime>08/16/2016 15:40:11</publishTime>
+    </File>
+    <File Include="Views/App/Register.cshtml">
+      <publishTime>08/16/2016 15:40:12</publishTime>
+    </File>
+    <File Include="Views/App/Trips.cshtml">
+      <publishTime>08/16/2016 15:40:13</publishTime>
+    </File>
+    <File Include="Views/Auth/Login.cshtml">
+      <publishTime>08/16/2016 15:40:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/16/2016 15:40:15</publishTime>
+    </File>
+    <File Include="Views/_ViewImports.cshtml">
+      <publishTime>08/16/2016 15:40:16</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/16/2016 15:40:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

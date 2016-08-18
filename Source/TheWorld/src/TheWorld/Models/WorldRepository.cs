@@ -1,10 +1,11 @@
-﻿namespace TheWorld.Models
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace TheWorld.Models
 {
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Logging;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
 
     public class WorldRepository : IWorldRepository
     {

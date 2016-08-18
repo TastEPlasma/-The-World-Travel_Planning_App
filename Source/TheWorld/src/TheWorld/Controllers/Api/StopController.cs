@@ -1,17 +1,18 @@
-﻿namespace TheWorld.Controllers.Api
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using TheWorld.Models;
+using TheWorld.Services;
+using TheWorld.ViewModels;
+
+namespace TheWorld.Controllers.Api
 {
-    using AutoMapper;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Net;
-    using System.Threading.Tasks;
-    using TheWorld.Models;
-    using TheWorld.Services;
-    using TheWorld.ViewModels;
 
     [Authorize]
     [Route("api/trips/{tripName}/stops")]

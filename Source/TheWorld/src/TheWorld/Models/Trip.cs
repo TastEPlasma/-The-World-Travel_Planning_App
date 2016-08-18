@@ -1,7 +1,9 @@
+using System;
+using System.Collections.Generic;
+
 namespace TheWorld.Models
 {
-    using System;
-    using System.Collections.Generic;
+    
 
     public class Trip
     {
