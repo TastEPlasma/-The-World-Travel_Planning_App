@@ -87,16 +87,6 @@ namespace TheWorld
             ILoggerFactory loggerFactory,
             IHostingEnvironment env)
         {
-            //if(env.IsDevelopment())
-            //{
-            //    loggerFactory.AddDebug(LogLevel.Information);
-            //    app.UseDeveloperExceptionPage();
-            //}
-            //else
-            //{
-            //    loggerFactory.AddDebug(LogLevel.Error);
-            //    app.UseExceptionHandler("/App/Error");
-            //}
 
             loggerFactory.AddDebug(LogLevel.Information);
             loggerFactory.AddConsole(LogLevel.Information);

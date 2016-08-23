@@ -1,0 +1,12 @@
+The purpose of this program is to show a familiarity and skill with the tools involved with full stack development under the .NET framework.
+
+It was constructed using Visual Studio Pro 2015 in July, 2016.  It uses a wide variety of libraries and techniques to meet the requirements needed for a functioning browser based application.
+
+The compiled version does not come bundled with a SQL server (I could not find a suitable candidate for this task), and as such Config.JSON will need to be modified to point at a local server.  
+
+The source version should be compilable on any modern version of Visual Studio, as server-side and client-side dependancies are managed by NuGet and Bower, respectively. 
+
+Thanks for checking it out!
+
+Sincerely,
+Erick R. Webster
